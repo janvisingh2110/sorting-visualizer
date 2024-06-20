@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body style="background-color:#FFFFEA;">
+    <header>
+        <nav style="background-color:#D8D8D8;display:flex;flex-direction:row;justify-content:center;">
+        <div class="array-inputs" style="color: black;width:800px;">
+            <div style="display:flex;flex-direction:row;align-items:center;gap:30px;">
+                <p>Array Size:</p>
+                <input id="a_size" type="range" min=10 max=70 step=1 value=20>
+            </div>
+            <br/>
+            <div style="display:flex;flex-direction:row;align-items:center;gap:30px;">
+                <p>Algorithem Speed:</p>
+                <input id="a_speed" type="range" min=1 max=10 step=1 value=4>
+            </div>
+        </div>
+        <!-- <div class="header_right"> -->
+            <button class="button-87 btn-prop" id="a_generate" style="height:50px; margin-top: 5%">Generate New Array</button>
+        <!-- </div> -->
+        </nav>
+    </header>
+
+    <section>
+        <div id="Info_Cont1">
+
+        </div>
+
+        <div id="array_container">
+
+        </div>
+
+        <div id="Info_Cont2">
+
+        </div>
+
+    </section>
+
+    <footer class="footer" style="display:flex; background-color:#D8D8D8; justify-content: center;">
+        <div class="algos" style="display:flex;gap: 10;">
+            <button class="button-87" style="margin: 20px;">Selection</button>
+            <button class="button-87" style="margin: 20px;">Insertion</button>
+            <button class="button-87" style="margin: 20px;">Merge</button>
+            <button class="button-87" style="margin: 20px;">Heap</button>
+            <button class="button-87" style="margin: 20px;">Bubble</button>
+            <button class="button-87" style="margin: 20px;">Quick</button>
+        </div>
+    </footer>
+
+    <script src="./scripts/main.js"></script>
+    <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>
+    <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+
+</html>
